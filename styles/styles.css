@@ -1,0 +1,87 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  font-family: "Caviar Dreams", sans-serif;
+}
+
+/* Home Page */
+/* Header */
+.headerBG {
+  height: 50%;
+  width: 100%;
+  background: url(../images/low-angle-greyscale-shot-airplane-flying-high-rise-buildings.jpg)
+    center;
+  background-size: cover;
+  position: absolute;
+  z-index: -100;
+}
+.headerBG h1 {
+  color: white;
+  position: absolute;
+  bottom: 0%;
+  margin-left: 30rem;
+  font-size: 63px;
+}
+header {
+  position: absolute;
+}
+header h3 {
+  color: white;
+  border: 2px solid white;
+}
+header a {
+  padding-right: 1rem;
+  color: white;
+  z-index: 1;
+  font-size: 25px;
+}
+header a:hover{
+    color: rgb(68, 67, 67);
+}
+/* main content */
+.homePage {
+  height: 100vh;
+}
+.homePage img {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 10rem;
+  border: 0.7rem solid white;
+  border-radius: 50%;
+}
+.introduce {
+  position: absolute;
+  top: 65%;
+  -ms-transform: translateY(-65%);
+  transform: translateY(-65%);
+  margin-left: 30rem;
+  color: rgb(19, 18, 18);
+}
+.introduce h1{
+    font-size: 63px;
+}
+.introduce p{
+    font-size: 22px;
+}
+
+/* Skills Page */
+#mySkills{
+    min-height: 100vh;
+}
+.skills{
+
+}
+.softSkills img{
+    width: 400px;
+    border-radius: 20px;
+}
