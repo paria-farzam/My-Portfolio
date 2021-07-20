@@ -10,6 +10,12 @@ a {
 body {
   font-family: "Caviar Dreams", sans-serif;
 }
+.homePage,
+#mySkills,
+#workExperiences,
+#aboutMe {
+  min-height: 100vh;
+}
 
 /* Home Page */
 /* Header */
@@ -42,13 +48,10 @@ header a {
   z-index: 1;
   font-size: 25px;
 }
-header a:hover{
-    color: rgb(68, 67, 67);
+header a:hover {
+  color: rgb(68, 67, 67);
 }
 /* main content */
-.homePage {
-  height: 100vh;
-}
 .homePage img {
   width: 300px;
   position: absolute;
@@ -67,21 +70,142 @@ header a:hover{
   margin-left: 30rem;
   color: rgb(19, 18, 18);
 }
-.introduce h1{
-    font-size: 63px;
+.introduce h1 {
+  font-size: 63px;
 }
-.introduce p{
-    font-size: 22px;
+.introduce p {
+  font-size: 22px;
 }
 
 /* Skills Page */
-#mySkills{
-    min-height: 100vh;
+#mySkills {
+  background: url(../images/low-angle-high-modern-building.jpg) top;
+  background-size: cover;
 }
-.skills{
+.skillsTitle{
+  background: rgba(128, 128, 128, 0.301);
+  height: 4rem;
+  color: white;
+  font-size: 40px;
+}
+.mySkills{
+  max-width: 1500px;
+}
+.mySkills img {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  transform: rotate(-11deg);
+  border: 2px dotted black;
+}
+.mySkills{
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.856);
+}
 
+/* Work Expriences Page */
+.workExperience-bg{
+  background: url(../images/vertical-gray.jpg) top;
+  background-size: cover;
+  width: 5rem;
+  margin-left: 5rem;
+  margin-right: 2rem;
 }
-.softSkills img{
-    width: 400px;
-    border-radius: 20px;
+.workInfo{
+  text-align: justify;
+}
+.mainWorkContent{
+  width: 40rem;
+  margin-top: 2rem;
+  font-size: 20px;
+}
+.mainWorkContent h1{
+  margin-bottom: 3rem;
+  color: palevioletred;
+}
+.date{
+  color: rgba(128, 128, 128, 0.856);
+  font-size: 15px;
+}
+.workInfo a:hover{
+  letter-spacing: 3px;
+}
+.workInfo a span{
+  font-size: 13px;
+}
+.mobile,
+.laptop{
+  height: 50vh;
+}
+.mobile{
+  transform: rotate(40deg);
+  z-index: -1;
+  margin-top: 1rem;
+}
+
+/* about me */
+#aboutMe{
+  background-image: url(../images/pexels-kim-van-vuuren-1586542.jpg);
+  background-size: cover;
+}
+.myInfo{
+  background: rgba(255, 255, 255, 0.589);
+  width: 40rem;
+  height: 25rem;
+  margin-left: 10rem;
+  border-radius: 1rem;
+}
+.myInfo img {
+  width: 15rem;
+  border-radius: 50%;
+  margin-left: -5rem;
+}
+.myInfo h1{
+  color: rgb(219, 118, 151);
+  font-size: 65px;
+}
+.myInfo p{
+  font-size: 19px;
+  text-align: justify;
+}
+.Education{
+  background: rgba(255, 255, 255, 0.589);
+  border-radius: 1rem;
+  width: 25rem;
+}
+.icons{
+  background: rgba(255, 255, 255, 0.589);
+  border-radius: 2rem;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+}
+.icons button{
+  border: none;
+  background: transparent;
+}
+.icons i{
+  font-size: 35px;
+}
+.icons i:hover{
+  color: palevioletred;
+}
+
+/* after click a button */
+.iconInfo{
+  width: max-content;
+  background: rgba(216, 112, 147, 0.753);
+  border-radius: 2rem;
+  padding: 5px .5rem;
+  min-width: 18rem;
+}
+.iconInfo p{
+  font-size: 18px;
+  margin: 0%;
+  padding: 5px;
+}
+.iconInfo button{
+  padding: 5px;
+}
+.iconInfo i:hover{
+  color: red;
 }

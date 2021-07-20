@@ -11,8 +11,15 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
     <link href="http://fonts.cdnfonts.com/css/caviar-dreams" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./js/app.js" defer></script>
 
     <title>Paria Farzam</title>
   </head>
@@ -21,8 +28,8 @@
       <header class="m-2">
         <h3 class="d-inline px-1">PF</h3>
         <a href="#mySkills">mySkills</a>
-        <a href="">workExperiences</a>
-        <a href="">aboutMe</a>
+        <a href="#workExperiences">workExperiences</a>
+        <a href="#aboutMe">aboutMe</a>
       </header>
 
       <!-- The reason for separating the background part from the header is that the links did not work that way -->
@@ -38,36 +45,153 @@
       </div>
     </section>
 
-    <section id="mySkills" class="d-flex flex-row">
-      <div class="skills">
-        <h1>Skills</h1>
-        <h3>HTML5</h3>
-        <h3>CSS3</h3>
-        <h3>Bootstrap</h3>
-        <h3>Basics Of JavaScript</h3>
-        <h3>Basics Of React js</h3>
-        <h3>Git</h3>
-        <h3>Direct Admin</h3>
-        <h3>Scrum</h3>
-        <h3>Trello</h3>
-        <h3>Programming Basics By C++</h3>
-        <h3>OOP Basics</h3>
-        <h3>Debugging</h3>
-      </div>
-      <div class="softSkills d-flex flex-column align-items-start">
-        <img src="./images/withCat.jpeg" alt="Me and a beautiful cat" />
-        <div>
-          <h1>Soft Skills</h1>
-          <h3>responsibility</h3>
-          <h3>Listening</h3>
-          <h3>Friendliness</h3>
-          <h3>Respect</h3>
-          <h3>Communication</h3>
-          <h3>TeamWork</h3>
-          <h3>Commitment</h3>
-          <h3>Problem Solving</h3>
+    <section id="mySkills" class="d-flex flex-column">
+      <h1 class="shadow text-center skillsTitle">
+        <strong>- mySkills -</strong>
+      </h1>
+      <article
+        class="
+          mySkills
+          d-flex
+          flex-row
+          justify-content-around
+          align-items-center
+          mt-5
+        "
+      >
+        <div class="skills">
+          <h1>&#10030;Skills</h1>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+            <li>Basics Of JavaScript</li>
+            <li>Basics Of React js</li>
+            <li>Git</li>
+            <li>Direct Admin</li>
+            <li>Scrum</li>
+            <li>Trello</li>
+            <li>Programming Basics By C++</li>
+            <li>OOP Basics</li>
+            <li>Debugging</li>
+          </ul>
         </div>
+        <div class="softSkills">
+          <h1>&#10030;Soft Skills</h1>
+          <ul>
+            <li>responsibility</li>
+            <li>Listening</li>
+            <li>Friendliness</li>
+            <li>Respect</li>
+            <li>Communication</li>
+            <li>TeamWork</li>
+            <li>Commitment</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+        <img src="./images/withCat.jpeg" alt="Me and a beautiful cat" />
+      </article>
+    </section>
+
+    <section
+      id="workExperiences"
+      class="d-flex flex-row justify-content-between"
+    >
+      <article class="workInfo d-flex flex-row">
+        <div class="workExperience-bg"></div>
+        <div class="mainWorkContent">
+          <h1>&#10022;WorkExperience</h1>
+          <p>
+            <span class="d-block date"><i>03/2021</i></span>
+            Five months ago, after learning HTML and CSS through free online
+            courses, I have developed my first project for a real client in 3
+            days. I was supposed to deliver bootstrap XXLarge and mobile view.
+          </p>
+          <p>
+            If you're wondering why I didn't put it in my resume, the reason is
+            that I'm adding parts to it and modifying it at the request of the
+            customer.
+          </p>
+          <p>
+            It worth mentioning that this website has been prepared for an art
+            gallery in Paris. It's design may seem corrupted or weird to you.
+            But it is just too artistic and uncommon. Like clothes in Chanel or
+            Ralph Lauren fashion show. Nobody wear those in the street. They’re
+            just art and not practical clothes.
+          </p>
+          <a href="http://marzierashidi.com/" target="_blank">
+            <strong
+              >Click here to visit it!
+              <span class="d-block"
+                ><i>
+                  Don't forget due to recent changes it's not complete yet!
+                </i></span
+              ></strong
+            >
+          </a>
+        </div>
+      </article>
+      <div class="d-flex flex-column align-items-center mx-5">
+        <img
+          src="./images/mobile.jpg"
+          alt="the mobile shows a website"
+          class="mobile"
+        />
+        <img
+          src="./images/desktop.jpg"
+          alt="the laptop shows a website"
+          class="laptop"
+        />
       </div>
+    </section>
+
+    <section
+      id="aboutMe"
+      class="d-flex flex-row justify-content-between align-items-center"
+    >
+      <!-- <div class="whiteVerticalLine"></div> -->
+      <!-- <div class="rightPart">
+      </div> -->
+      <article class="myInfo d-flex flex-row align-items-center">
+        <img
+          src="./images/B&W.jpg"
+          alt="a black and white picture of me :)"
+          class="shadow"
+        />
+        <div class="p-5">
+          <h1>About Me</h1>
+          <p class="text-justify">
+            I want to be a junior react developer in one year. And then become a
+            senior one in next two years. I am excited to expand and deepen my
+            knowledge while creating real products for real customers. I am
+            self-learner and hard worker so I can be a good match for your
+            intern position.
+          </p>
+        </div>
+      </article>
+      <section class="m-5">
+        <div class="Education p-4">
+          <h1>Education</h1>
+          <p>
+            <strong>Bachelor of Sociology/ Remote Education</strong><br />
+            Arman Razavi University<br />
+            <span class="text-black-50">09/2018 - Now</span>
+          </p>
+        </div>
+        <div id="icons" class="icons d-flex flex-row justify-content-between">
+
+          <button id="location"><i class="fas fa-map-marker-alt"></i></button>
+          <button id="phone"><i class="fas fa-mobile-alt"></i></button>
+          <button id="mail"><i class="far fa-envelope"></i></button>
+          <button id="skype"><i class="fab fa-skype"></i></button>
+          <!-- <button><i class="fab fa-linkedin-in"></i></button> -->
+
+          <div class="d-flex justify-content-between align-items-center iconInfo d-none" id="information">
+            <p class="d-inline" id="iconInfo">this is a simple text</p>
+            <button id="closeBtn"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
